@@ -1,7 +1,7 @@
 // src/InsertFunction/app.ts
 
 import { AzureFunction, Context, HttpRequest } from '@azure/functions';
-import { connect, close, sql } from '../shared/db';
+import { connect, sql } from '../shared/db';
 
 interface RequestBody {
   name: string;

@@ -3,8 +3,16 @@
     "module": "commonjs",
     "target": "es6",
     "outDir": "dist",
-    "rootDir": ".",
+    "rootDir": "./src",
     "sourceMap": true,
-    "strict": false
-  }
+    "strict": false,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "shared/**/*.ts"
+  ]
 }
